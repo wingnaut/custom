@@ -56,6 +56,7 @@
                 }
             }
         }
+    
         //Nice Command
         bot.commands.niceCommand = {
             command: 'nice',
@@ -100,8 +101,8 @@
         maximumCycletime: 10,
         voteSkip: false,
         voteSkipLimit: 10,
-        historySkip: false,
-        timeGuard: true,
+        historySkip: true,
+        timeGuard: false,
         strictTimeGuard: true,
         maximumSongLength: 22,
         autodisable: false,
@@ -137,10 +138,13 @@
         messageInterval: 5,
         songstats: false,
         commandLiteral: '!',
+        propsCommand: true,
+        niceCommand: true,
         blacklists: {
             NSFW: 'https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json',
             OP: 'https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json',
             BANNED: 'https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json'
+       
         }
     }));
 
