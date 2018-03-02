@@ -88,7 +88,7 @@
         autowoot: true,
         autoskip: false,
         smartSkip: true,
-        cmdDeletion: true,
+        cmdDeletion: false,
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 60,
@@ -138,8 +138,6 @@
         messageInterval: 5,
         songstats: false,
         commandLiteral: '!',
-        propsCommand: true,
-        niceCommand: true,
         blacklists: {
             NSFW: 'https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json',
             OP: 'https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json',
