@@ -40,8 +40,6 @@
 
         // Load the chat package again to account for any changes
         bot.loadChat();
-
-      }
     
     
     //Change the bots default settings and make sure they are loaded on launch
