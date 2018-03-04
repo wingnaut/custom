@@ -78,7 +78,6 @@
         bouncerPlus: true,
         blacklistEnabled: false,
         lockdownEnabled: false,
-        propsCommand: true,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: true,
