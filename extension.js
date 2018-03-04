@@ -42,6 +42,19 @@
         bot.loadChat();
 
       }
+    // propsCommand
+    bot.commands.propsCommand = {
+            command: ['props', 'woot', 'nice', 'dope'],
+            rank: 'user',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a rad track!");
+                }
+            }
+        }
     
     
     //Change the bots default settings and make sure they are loaded on launch
@@ -65,6 +78,7 @@
         bouncerPlus: true,
         blacklistEnabled: false,
         lockdownEnabled: false,
+        propsCommand: true,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: true,
