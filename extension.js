@@ -58,7 +58,7 @@
         autoskip: false,
         smartSkip: true,
         cmdDeletion: false,
-        maximumAfk: 120,
+        maximumAfk: 90,
         afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
