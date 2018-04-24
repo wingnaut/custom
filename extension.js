@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['nibba', 'nibbas', 'fag', 'spam4'];
+        var spamWords = ['nibba', 'nibbas', 'fag', 'spic'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -38,7 +38,22 @@
           }
         };
 
-        //Props command:
+        //Props command1:
+
+        bot.commands.propsCommand = {
+            command: 'props',
+            rank: 'user',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a great track!");
+                }
+            }
+        }
+
+        //Props command2:
         bot.commands['props'] = new Command(true,0,"props|nice|dope :: Show some appreciation for the DJ! Any rank.",function(){
     const dj = getUser(room.booth.currentDJ);
     let msg = "";
