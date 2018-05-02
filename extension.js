@@ -36,7 +36,7 @@
               API.sendChat("/me Bacon!!!");
             }
           }
-        };
+        }
 
         //Props command1:
 
