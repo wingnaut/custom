@@ -51,7 +51,7 @@
                     API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a great track!");
                 }
             }
-        };
+        }
 
 
         // Load the chat package again to account for any changes
