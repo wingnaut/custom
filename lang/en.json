@@ -13,7 +13,7 @@
         "gives you a fortune cookie. It reads \"Don't forget to eat your veggies!\"",
         "gives you a fortune cookie. It reads \"Do you even lift?\"",
         "gives you a fortune cookie. It reads \"Calm yo tits.\"",
-        "gives you a fortune cookie. It reads \"I\"",
+        "gives you a fortune cookie. It reads \"Pants are for suckers.\"",
         "gives you a fortune cookie. It reads \"I love you.\"",
         "gives you a Golden Cookie. You can't eat it because it is made of gold. Dammit.",
         "gives you an Oreo cookie with a glass of milk!",
@@ -108,7 +108,7 @@
         "Washington Apple", 
         "Cherry Bomb"
     ],
-    "nice" [
+    "nice": [
         "dope", 
         "tight",
         ":fire:", 
