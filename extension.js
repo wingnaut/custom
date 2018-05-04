@@ -65,13 +65,13 @@
                         var msg = chat.message;
                         var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
                         var randomUser = Math.floor(Math.random() * crowd.length);
-                        var randomNice = Math.floor(Math.random() * basicBot.chat.nice.length);
+                        var randomNice = Math.floor(Math.random() * basicBot.chat.dope.length);
                         var randomSentence = Math.floor(Math.random() * 1);
                         API.sendChat(subChat(basicBot.chat.nice, {
                             name: chat.un,
                             botname: basicBot.settings.botName,
                             question: argument,
-                            response: basicBot.chat.nice[randomNice]
+                            response: basicBot.chat.dope[randomNice]
                         }));
                     }
                 }
@@ -89,7 +89,7 @@
                         var msg = chat.message;
                         var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
                         var randomUser = Math.floor(Math.random() * crowd.length);
-                        var randomShot = Math.floor(Math.random() * basicBot.chat.shot.length);
+                        var randomShot = Math.floor(Math.random() * basicBot.chat.shots.length);
                         var randomSentence = Math.floor(Math.random() * 1);
                         API.sendChat(subChat(basicBot.chat.shot, {
                             name: chat.un,
