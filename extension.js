@@ -77,8 +77,8 @@
                 }
             };
         //shot command
-        shotCommand: {
-                command: ['shot', 'shots'],
+        bot.commands.shotCommand: {
+                command: 'shot',
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
