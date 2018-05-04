@@ -38,7 +38,7 @@
           }
         };
 
-        //Props command:
+        //Props command 1
         bot.commands.propsCommand = {
             command: 'props',
             rank: 'user',
@@ -47,14 +47,60 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a rad track!");
+                    API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a dope track!");
                 }
             }
         };
 
+        //Props command2:
+        bot.commands.niceCommand = {
+            command: ['nice', 'tight', 'dope'],
+            rank: 'user',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                    else {
+                        var crowd = API.getUsers();
+                        var msg = chat.message;
+                        var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
+                        var randomUser = Math.floor(Math.random() * crowd.length);
+                        var random = Math.floor(Math.random() * basicBot.chat.balls.length);
+                        var randomSentence = Math.floor(Math.random() * 1);
+                        API.sendChat(subChat(basicBot.chat.ball, {
+                            name: chat.un,
+                            botname: basicBot.settings.botName,
+                            question: argument,
+                            response: basicBot.chat.balls[randomBall]
+                        }));
+                    }
+                }
+            };
+        //shot command
+        shotCommand: {
+                command: ['shot', 'shots'],
+                rank: 'user',
+                type: 'startsWith',
+                functionality: function(chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                    else {
+                        var crowd = API.getUsers();
+                        var msg = chat.message;
+                        var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
+                        var randomUser = Math.floor(Math.random() * crowd.length);
+                        var randomShot = Math.floor(Math.random() * basicBot.chat.shot.length);
+                        var randomSentence = Math.floor(Math.random() * 1);
+                        API.sendChat(subChat(basicBot.chat.shot, {
+                            name: chat.un,
+                            botname: basicBot.settings.botName,
+                            question: argument,
+                            response: basicBot.chat.shots[randomShot]
+                        }));
+                    }
+                }
+            };
 
-        
-        
         
         // Load the chat package again to account for any changes
         bot.loadChat();
