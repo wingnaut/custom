@@ -77,7 +77,7 @@
                 }
             };
         //shot command
-        bot.commands.shotCommand: {
+        bot.commands.shotCommand = {
                 command: 'shot',
                 rank: 'user',
                 type: 'startsWith',
