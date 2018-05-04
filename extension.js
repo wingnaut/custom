@@ -65,13 +65,13 @@
                         var msg = chat.message;
                         var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
                         var randomUser = Math.floor(Math.random() * crowd.length);
-                        var random = Math.floor(Math.random() * basicBot.chat.balls.length);
+                        var randomNice = Math.floor(Math.random() * basicBot.chat.nice.length);
                         var randomSentence = Math.floor(Math.random() * 1);
-                        API.sendChat(subChat(basicBot.chat.ball, {
+                        API.sendChat(subChat(basicBot.chat.nice, {
                             name: chat.un,
                             botname: basicBot.settings.botName,
                             question: argument,
-                            response: basicBot.chat.balls[randomBall]
+                            response: basicBot.chat.nice[randomNice]
                         }));
                     }
                 }
