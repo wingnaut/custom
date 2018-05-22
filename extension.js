@@ -67,15 +67,12 @@
                         var randomUser = Math.floor(Math.random() * crowd.length);
                         var randomNice = Math.floor(Math.random() * basicBot.chat.dope.length);
                         var randomSentence = Math.floor(Math.random() * 1);
-                        API.sendChat(subChat(basicBot.chat.nice, {
-                            name: chat.un,
-                            botname: basicBot.settings.botName,
-                            question: argument,
-                            response: basicBot.chat.dope[randomNice]
-                        }));
+                        API.sendChat(chat.un + API.getDJ().username + basicBot.chat.dope[randomNice]);
+                        };
                     }
                 }
             };
+            
         //shot command
         bot.commands.shotCommand = {
                 command: 'shot',
@@ -91,12 +88,8 @@
                         var randomUser = Math.floor(Math.random() * crowd.length);
                         var randomShot = Math.floor(Math.random() * basicBot.chat.shots.length);
                         var randomSentence = Math.floor(Math.random() * 1);
-                        API.sendChat(subChat(basicBot.chat.shot, {
-                            name: chat.un,
-                            botname: basicBot.settings.botName,
-                            question: argument,
-                            response: basicBot.chat.shots[randomShot]
-                        }));
+                        API.sendChat(chat.un + API.getDJ().username + basicBot.chat.shots[randomShot]);
+                        };
                     }
                 }
             };
