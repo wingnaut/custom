@@ -68,7 +68,6 @@
                         var randomNice = Math.floor(Math.random() * basicBot.chat.dope.length);
                         var randomSentence = Math.floor(Math.random() * 1);
                         API.sendChat(chat.un + API.getDJ().username + basicBot.chat.dope[randomNice]);
-                        };
                     }
                 }
             };
@@ -89,7 +88,6 @@
                         var randomShot = Math.floor(Math.random() * basicBot.chat.shots.length);
                         var randomSentence = Math.floor(Math.random() * 1);
                         API.sendChat(chat.un + API.getDJ().username + basicBot.chat.shots[randomShot]);
-                        };
                     }
                 }
             };
