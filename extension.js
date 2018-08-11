@@ -37,8 +37,9 @@
             }
           }
         };
+        
         // Jif Command
-        bot.commands.baconCommand = {
+        bot.commands.jifCommand = {
           command: 'jif',  
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
@@ -51,7 +52,19 @@
           }
         };        
         
-        
+        // B-1
+        bot.commands.b1Command = {
+          command: 'b1',  
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("https://cdn.discordapp.com/attachments/444693475460513794/477902193618452511/Gif-600x494.jpg");
+            }
+          }
+        };
         
         //Props command 1
         bot.commands.propsCommand = {
