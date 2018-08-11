@@ -37,7 +37,7 @@
             }
           }
         };
-        
+        // Jif Command
         bot.commands.baconCommand = {
           command: 'jif',  
           rank: 'user', // Minimum user permission to use the command
@@ -46,7 +46,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("http://media0.giphy.com/media/29yGKKh9FRrzi/giphy.gif");
+              API.sendChat("https://i.giphy.com/eU60UxWVBMuEE.gif");
             }
           }
         };        
