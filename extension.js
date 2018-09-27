@@ -37,20 +37,7 @@
             }
           }
         };
-        
-        // Jif Command
-        bot.commands.jifCommand = {
-          command: 'jif',  
-          rank: 'user', // Minimum user permission to use the command
-          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-          functionality: function (chat, cmd) {
-            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-            if (!bot.commands.executable(this.rank, chat)) return void (0);
-            else {
-              API.sendChat("https://i.giphy.com/eU60UxWVBMuEE.gif");
-            }
-          }
-        };        
+        // ***** STAFF COMMANDS *****  
         
         // arkey
         bot.commands.arkeyCommand = {
@@ -75,10 +62,43 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("https://cdn.discordapp.com/attachments/444693475460513794/477902193618452511/Gif-600x494.jpg");
+              API.sendChat("https://media.discordapp.net/attachments/423148585853648909/493617422948106251/Moe_memerap.png");
             }
           }
         };
+        
+                
+        // Jif Command
+        bot.commands.jifCommand = {
+          command: 'jif',  
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("https://i.giphy.com/eU60UxWVBMuEE.gif");
+            }
+          }
+        };      
+                
+        //  Sparky Command
+        bot.commands.sparkyCommand = {
+          command: 'sparky',  
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("https://66.media.tumblr.com/6d3bbdb8966afc2cf52ecbeb2a5b0b4e/tumblr_ocmrr9vMkl1skn0b9o1_400.gif");
+            }
+          }
+        };      
+        
+        
+        // END STAFF COMMANDS
+        
         
         //Props command 1
         bot.commands.propsCommand = {
@@ -98,7 +118,7 @@
         bot.commands.niceCommand = {
             command: ['nice', 'tight', 'dope'],
             rank: 'user',
-            type: 'exact',
+            type: 'startsWith',
             functionality: function(chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void(0);
