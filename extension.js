@@ -77,7 +77,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("https://i.giphy.com/eU60UxWVBMuEE.gif");
+              API.sendChat("https://i.imgur.com/yEGQiaP.mp4");
             }
           }
         };      
@@ -119,7 +119,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("https://bit.ly/2Jlfk6H");
+              API.sendChat("https://images.sex.com/images/pinporn/2017/07/06/620/18013139.gif");
             }
           }
         };
