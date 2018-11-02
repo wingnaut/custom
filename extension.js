@@ -110,6 +110,20 @@
           }
         };
         
+        // smith2
+        bot.commands.smithCommand = {
+          command: 'smith2',  
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("https://media1.tenor.com/images/5c36c0e9adaae00f14b8862c22ed125b/tenor.gif");
+            }
+          }
+        };
+        
         //  Sparky Command
         bot.commands.sparkyCommand = {
           command: 'sparky',  
