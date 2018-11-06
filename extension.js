@@ -221,7 +221,7 @@
         botName: 'drunkBot',
         language: 'english',
         chatLink: 'https://cdn.jsdelivr.net/gh/wingnaut/custom@ae1b2e23a8150bdcb72e5d2e5699f15569a040a5/lang/en.json',
-        scriptLink: 'https://cdn.jsdelivr.net/gh/wingnaut/source@6c43990783c07bf28d3412da2991e78f664c0281/basicBot.js',
+        scriptLink: 'https://cdn.jsdelivr.net/gh/wingnaut/source@1a7eb38efacc9a8a7a84139b70d57cb504907a01/basicBot.js',
         roomLock: false, // Requires an extension to re-load the script
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
@@ -287,6 +287,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://cdn.jsdelivr.net/gh/wingnaut/source@2256050372a5421de155495f11b5a90d319ee28a/basicBot.js", extend);
+    $.getScript("https://cdn.jsdelivr.net/gh/wingnaut/source@1a7eb38efacc9a8a7a84139b70d57cb504907a01/basicBot.js", extend);
 
 }).call(this);
