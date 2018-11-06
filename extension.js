@@ -220,7 +220,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: 'drunkBot',
         language: 'english',
-        chatLink: 'https://cdn.jsdelivr.net/gh/wingnaut/source@6c43990783c07bf28d3412da2991e78f664c0281/lang/en.json',
+        chatLink: 'https://cdn.jsdelivr.net/gh/wingnaut/custom@ae1b2e23a8150bdcb72e5d2e5699f15569a040a5/lang/en.json',
         scriptLink: 'https://cdn.jsdelivr.net/gh/wingnaut/source@6c43990783c07bf28d3412da2991e78f664c0281/basicBot.js',
         roomLock: false, // Requires an extension to re-load the script
         startupCap: 1, // 1-200
