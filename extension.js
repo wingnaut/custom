@@ -111,7 +111,7 @@
         };
         
         // smith2
-        bot.commands.smithCommand = {
+        bot.commands.smith2Command = {
           command: 'smith2',  
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
