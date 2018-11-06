@@ -287,6 +287,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://cdn.jsdelivr.net/gh/wingnaut/source@6c43990783c07bf28d3412da2991e78f664c0281/basicBot.js", extend);
+    $.getScript("https://cdn.jsdelivr.net/gh/wingnaut/source@2256050372a5421de155495f11b5a90d319ee28a/basicBot.js", extend);
 
 }).call(this);
