@@ -1,6 +1,6 @@
 (function () {
 
-    /*// Change this to your GitHub username so you don't have to modify so many things.
+    /* Change this to your GitHub username so you don't have to modify so many things.
     var fork = "wingnaut";*/
 
     // Define our function responsible for extending the bot.
@@ -154,6 +154,22 @@
         
         // END STAFF COMMANDS
         
+        //party command
+        bot.commands.partyCommand = {
+                command: 'party',
+                rank: 'manager',
+                type: 'exact',
+                functionality: function(chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                    else {
+                        API.getUsers().forEach(fxn);
+                        function fxn(data) {
+                            API.moderateAddDJ(data.id.toString());
+                        }
+                    }
+                }
+            };
         
         //Props command 1
         bot.commands.propsCommand = {
