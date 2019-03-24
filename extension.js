@@ -154,8 +154,9 @@
         
         // END STAFF COMMANDS
         
+        /* BROKEN COMMANDS
         //party command
-       /* bot.commands.partyCommand = {
+        bot.commands.partyCommand = {
                 command: 'party',
                 rank: 'manager',
                 type: 'exact',
@@ -170,22 +171,7 @@
                     }
                 }
             };
-        */
-        //Props command 1
-        bot.commands.propsCommand = {
-            command: 'props',
-            rank: 'user',
-            type: 'exact',
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a rad track!");
-                }
-            }
-        };
-
-        //Props command2:
+             //Props command2:
         bot.commands.niceCommand = {
             command: ['nice', 'tight', 'dope'],
             rank: 'user',
@@ -223,9 +209,25 @@
                         API.sendChat(chat.un + API.getDJ().username + basicBot.chat.shots[randomShot]);
                     }
                 }
-            };
-
+            }; 
+            
+        END BROKEN COMMANDS */
         
+        
+        //Props command 1
+        bot.commands.propsCommand = {
+            command: 'props',
+            rank: 'user',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat(chat.un +" just gave props to @"+ API.getDJ().username +" for playing a rad track!");
+                }
+            }
+        };
+
         // Load the chat package again to account for any changes
         bot.loadChat();
 
