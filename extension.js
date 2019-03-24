@@ -155,7 +155,7 @@
         // END STAFF COMMANDS
         
         //party command
-        bot.commands.partyCommand = {
+       /* bot.commands.partyCommand = {
                 command: 'party',
                 rank: 'manager',
                 type: 'exact',
@@ -170,7 +170,7 @@
                     }
                 }
             };
-        
+        */
         //Props command 1
         bot.commands.propsCommand = {
             command: 'props',
